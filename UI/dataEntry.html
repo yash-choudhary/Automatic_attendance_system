@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Gully Boys - Attendance System
+        </title>
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <style>
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+            label{
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <!----------------- NAVIGATION BAR ----------->
+        
+  
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><i class="material-icons">speaker_notes</i></a>
+            </div>
+        </nav>
+        <div class="progress">
+                <div class="determinate" style="width:0%" id="bar"></div>
+        </div>
+        
+        
+        <!------------------------- LOG OUT BUTTON  ------------->
+        <div class="container" style="padding-top:50px">
+                <a class="waves-effect waves-light btn" onClick="logOut()">Log Out</a>
+          </div>
+             <!----------------------------- MAIN BODY ------------------->
+        <div class="container" style="margin-top: 40px">
+                <div class="row center">
+                    <h4>Dear Staff member, all field shown here are mandatory. Please fill with caution and only click the train button 
+                        when all students have given their details.
+                    </h4>
+                </div>
+                <div class="row" style="margin-top:50px">
+                    <form class="col s6" style="margin-top:25px">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Ex. RA1711003010350" id="studentregno" type="text">
+                                <label class="red-text">Student's Registration Number*</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" id="studentname" placeholder="Ex. Elon Musk">
+                                <label class="red-text">Student's Full Name*</label>
+                            </div>
+                        </div>
+                        <a class="waves-effect waves-light btn-large" onclick="writeUserData()">Submit details</a>
+                        <a class="waves-effect waves-light btn-large" onclick="Train()" style="margin-left:50px">Begin Training</a>
+                    </form>
+             
+             <!----------------------------- IMAGE HERE ----------------------->
+                    <label class="btn white" style="background-image:url('img/user.png'); height: 400px; width:400px;background-repeat: no-repeat;background-size: cover" onclick="foo()">
+                    </label>
+                    
+                </div>
+                    
+                
+
+
+
+                
+
+    
+    
+    
+    
+            </div>  <!--CONTAINER DIV-->
+            <!--------------------PRELOADER HERE ---------------->
+        <div class="progress" id="preloader" style="visibility:hidden">
+            <div class="indeterminate"></div>
+        </div>
+        <br><br><br>
+    
+    </body>
+
+
+
+
+
+
+
+    <!----------------------- FOOOOTER HEREEE --------------->
+
+    <footer class="page-footer black-text" style="background-color:rgba(66, 165, 245,1.0)">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="black-text">Automatic Attendance System</h5>
+                        <p class="black-text">Mozofest 2019 Hackathon, 30th-31st March, 2019</p>
+                    </div>
+                    <div class="col l2 s12 offset-l4">
+                        <br>
+                            <a class="waves-effect waves-light btn-large" onclick="exitfxn()">Exit Panel</a>
+                    </div>
+                    <div class="col l2 s12 offset-l4">
+                        <br>
+                        <label class="btn" style="height:0px;width:0px"><a id="trainfield" class="waves-effect waves-light btn-large">Upload File</a>
+                            <input type="file" id="file" style="visibility:hidden">
+                        </label>                            
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright black-text" style="background-color:#1E88E5">
+                <div class="container center">
+                    &copy; 2019 GullyBoys
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+<!--------------------- SCRIPTING TIME -------------->
+
+
+        <!-- ACTIVATE DATABASE -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <!-- normal script imports etc  -->
+        <script src="js/jquery.js"></script> 
+        
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        
+        <script src="js/upload.js"></script>
+
+        <script>
+            require('./renderer.js');
+        </script>
+        <script>
+        function exitfxn(){
+            window.close();
+        }
+        </script>
+
+</html>

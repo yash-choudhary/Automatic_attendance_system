@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Gully Boys - Attendance System
+        </title>
+        <script src="js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    </head>
+    <body>
+        <!--------------------------NAVIGATION BAR ------------------------------->
+  <nav>
+        <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo"><i class="material-icons">speaker_notes</i></a>
+        </div>
+    </nav>
+    <!------------------------- BACK BUTTON  ------------->
+    <div class="container" style="padding-top:50px">
+            <a class="waves-effect waves-light btn" href="../adminScreen.html">Go back</a>
+    </div>
+
+        <!----------------------------MAIN BODY ------------------------->
+    <div class="container">
+            <h2 class="center">Attendance Statistics for</h2>
+            <h5 class="center">Day Order: 2</h5>
+            <br>
+        <table class="striped responsive-table centered highlight yellow lighten-3">
+            <thead>
+                <tr>
+                    <th>Registration Number</th>
+                    <th>Student Name</th>
+                    <th>Present(1)/Absent(0)</th>
+                </tr>
+            </thead>
+            <tbody  class="stripped">
+                <tr>
+                    <td>RA1711003010369</td>
+                    <td>Anany</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>RA1711003010992</td>
+                    <td>Yash</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>RA1711003010859</td>
+                    <td>Movva</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>RA1611003060265</td>
+                    <td>Shivank</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>RA1711003010512</td>
+                    <td>Nitin</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>RA1711003010350</td>
+                    <td>Shantnu</td>
+                    <td>1</td>
+                </tr>
+            <tr>
+                    <td>RA1711003010411</td>
+                    <td>Anil</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="row">
+            <div class="col s2">
+                <a class="waves-effect waves-light btn " href="data1.html">Previous Day Order</a>
+            </div>
+            <div class="col s2 offset-s8">
+                <a class="waves-effect waves-light btn" href="data3.html">Next Day Order</a>
+            </div>
+        </div>  
+
+<br><br><br><br><br><br>
+
+
+
+        </div>  <!--CONTAINER DIV-->
+        
+    
+           
+    </body>
+
+<!----------------------- FOOOOTER HEREEE --------------->
+<footer class="page-footer black-text" style="background-color:rgba(66, 165, 245,1.0)">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Automatic Attendance System</h5>
+                    <p class="black-text">Mozofest 2019 Hackathon, 30th-31st March, 2019</p>
+                </div>
+                <div class="col l2 s12 offset-l4">
+                    <br>
+                        <a class="waves-effect waves-light btn-large" onclick="exitfxn()">Exit Panel</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black-text" style="background-color:#1E88E5">
+            <div class="container center">
+                &copy; 2019 GullyBoys
+            </div>
+        </div>
+    </footer>
+
+
+<!--------------------- SCRIPTING TIME -------------->
+
+
+
+
+        <!-- ACTIVATE DATABASE -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <!-- normal script imports etc  -->
+        <script src="js/jquery.js"></script> 
+        
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        
+    
+    <script>
+        require('./renderer.js');
+    </script>
+    <script>
+        function exitfxn(){
+            window.close();
+        }
+        </script>
+    
+    
+
+</html>

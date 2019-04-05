@@ -1,2 +1,7 @@
-# Automatic_attendance_system
-We are thinking of building a face detection and recognition system for the whole classroom using CCTV camera. It will recognize the face of each student in a class simultaneously and can mark attendance at a specified time. Moreover, it will recognize the student satisfaction level in real time to grade the lecture quality. In future, we are thinking to scale this to Private/government Colleges/Schools, Corporations. The same model can also be used for Access management.
+# GullyBoys
+This Repo Belongs to team GullyBoys.
+Automated, reliable, accurate, Attendance System for anyone and everyone who takes attendance in real-time.
+It is not like a biometric system as in the object is not involved.
+It takes image of a class as whole and the recognizes the faces of students and gives them attendance without any intervention of teacher, hence fully automated multiface recognition.
+Moreover, the same architecture can be used for surveillance too.
+*#AttendanceSimplified*

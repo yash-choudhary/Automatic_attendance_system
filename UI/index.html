@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Gully Boys - Attendance System
+        </title>
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+            
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><i class="material-icons">speaker_notes</i></a>
+            </div>
+        </nav>
+            
+        <div class="container">
+            
+            <h1 class="center">Automated Attendance Control Panel</h1>
+
+            <br><br><br><br>
+            <h3 class="center">Please choose an option to proceed</h3>
+            <br><br><br><br>
+            <div class="row">
+                <div class="col l12 s12 center">
+                        <a class="waves-effect waves-light btn-large" href="facultyLogin.html">Enroll New Student</a>
+                </div> 
+            </div>    
+            <div class="row">
+                <div class="col l12 s12 center">
+                        <a class="waves-effect waves-light btn-large" href="adminLogin.html">Administrator Login</a>
+                </div>
+            </div>
+                            
+        </div>
+        
+    
+        
+    </body>
+
+
+
+
+
+
+    <!----------------------- FOOOOTER HEREEE --------------->
+
+
+    <footer class="page-footer black-text" style="background-color:rgba(66, 165, 245,1.0); bottom:0;position:absolute; width: 100%">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Automatic Attendance System</h5>
+                    <p class="black-text">Mozofest 2019 Hackathon, 30th-31st March, 2019</p>
+                </div>
+                <div class="col l2 s12 offset-l4">
+                    <br>
+                        <a class="waves-effect waves-light btn-large" onclick="exitfxn()">Exit Panel</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black-text" style="background-color:#1E88E5">
+            <div class="container center">
+                &copy; 2019 GullyBoys
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+<!--------------------- SCRIPTING TIME -------------->
+
+
+        <!-- ACTIVATE DATABASE -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <!-- normal script imports etc  -->
+        <script src="js/jquery.js"></script> 
+        
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        
+        <script src="js/index.js"></script>
+
+        <script>
+            require('./renderer.js');
+        </script>
+        <script>
+        function exitfxn(){
+            window.close();
+        }
+        </script>
+
+</html>
