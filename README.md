@@ -21,3 +21,6 @@ Instructions for installation:
 All codes are equipped with appropriate logs for debug.
 
 Note:- The model is pretrained on Jason Mamoa, Elon Musk and Leonardo DiCap. So you can directly run the PredictAttendance(Face_recog 10 stills) to see the output.
+<p align="center">
+  <img src="UPDATED/Screenshot 2019-03-31 at 1.35.54 AM.png" width="350" title="Demo">
+</p>
