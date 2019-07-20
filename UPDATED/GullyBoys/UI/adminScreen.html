@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Gully Boys - Attendance System
+        </title>
+        <script src="js/jquery.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+            
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><i class="material-icons">speaker_notes</i></a>
+            </div>
+        </nav>
+            
+        <!------------------------- LOG OUT BUTTON  ------------->
+        <div class="container" style="padding-top:50px">
+                <a class="waves-effect waves-light btn" onClick="logOut()">Log Out</a>
+          </div>
+
+          <!-------------------- MAIN BODYY ---------------------->
+        <div class="container">
+            
+            <h1 class="center">Welcome, Administrator.</h1>
+
+            <br><br><br><br>
+            <h4 class="center">Choose the day order for which you want to see the student statistics.</h4>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="1">Day Order 1</option>
+                        <option value="2">Day Order 2</option>
+                        <option value="3">Day Order 3</option>
+                    </select>
+                    <label>Day Order List</label>
+                </div>
+            <br><br><br><br>
+            
+            
+            <div class="row">
+                <div class="col offset-l5">
+                    <a class="waves-effect waves-light btn-large centered" onclick="pyCam()">Capture with Camera</a>
+                </div>
+                
+            </div>
+        </div>
+        
+          
+    </body>
+
+
+
+
+
+
+
+    <!----------------------- FOOOOTER HEREEE --------------->
+
+    <footer class="page-footer black-text" style="background-color:rgba(66, 165, 245,1.0); bottom:0;position:absolute; width: 100%">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="black-text">Automatic Attendance System</h5>
+                        <p class="black-text">Mozofest 2019 Hackathon, 30th-31st March, 2019</p>
+                    </div>
+                    <div class="col l2 s12 offset-l4">
+                        <br>
+                            <a class="waves-effect waves-light btn-large" onclick="exitfxn()">Exit Panel</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright black-text" style="background-color:#1E88E5">
+                <div class="container center">
+                    &copy; 2019 GullyBoys
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+<!--------------------- SCRIPTING TIME -------------->
+
+
+        <!-- ACTIVATE DATABASE -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <!-- normal script imports etc  -->
+        <script src="js/jquery.js"></script> 
+        
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        
+        <script src="js/adminScreen.js"></script>
+
+        <script>
+            require('./renderer.js');
+        </script>
+
+        <script>
+            function exitfxn(){
+            window.close();
+        }
+    </script>
+</html>

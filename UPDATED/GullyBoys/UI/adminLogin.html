@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Gully Boys - Attendance System
+        </title>
+        <script src="js/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    </head>
+    <body>
+        
+  <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><i class="material-icons">speaker_notes</i></a>
+        </div>
+    </nav>
+      <div class="container" style="padding-top:50px">
+            <a class="waves-effect waves-light btn" href="index.html">Go back</a>
+      </div>
+        
+        <div class="container" style="padding-top: 100px; padding-bottom: 100px">
+            <div class="row center">
+                <h4>Welcome Admin, please login below to proceed.</h4>
+            </div>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Please enter the administrator email ID" id="loginemail" type="text" class="validate">
+                            <label for="email">Email ID</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="password" class="validate" id="loginpassword" placeholder="Enter the administrator password">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                </form>
+            <a class="waves-effect waves-light btn-large" onclick="M.toast({html: 'Logging you in!'}); foo()">Submit and Login</a>
+        
+            
+
+
+
+        </div>  <!--CONTAINER DIV-->
+        
+    
+           
+    </body>
+
+<!----------------------- FOOOOTER HEREEE --------------->
+<footer class="page-footer black-text" style="background-color:rgba(66, 165, 245,1.0); bottom:0;position:absolute; width: 100%" >
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Automatic Attendance System</h5>
+                    <p class="black-text">Mozofest 2019 Hackathon, 30th-31st March, 2019</p>
+                </div>
+                <div class="col l2 s12 offset-l4">
+                    <br>
+                        <a class="waves-effect waves-light btn-large" onclick="exitfxn()">Exit Panel</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black-text" style="background-color:#1E88E5">
+            <div class="container center">
+                &copy; 2019 GullyBoys
+            </div>
+        </div>
+    </footer>
+
+
+
+<!--------------------- SCRIPTING TIME -------------->
+
+
+
+
+        <!-- ACTIVATE DATABASE -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <!-- normal script imports etc  -->
+        <script src="js/jquery.js"></script> 
+        
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        
+    
+    <script>
+        require('./renderer.js');
+    </script>
+    <script src="js/adminLogin.js"></script>
+    <script>
+    function exitfxn(){
+        window.close();
+    }
+    </script>
+    
+    
+
+</html>
